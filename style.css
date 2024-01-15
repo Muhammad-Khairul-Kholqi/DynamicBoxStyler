@@ -1,0 +1,49 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .kotak-dynamic {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 120px 20%;
+    }
+
+    .kotak {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #000;
+    }
+
+    .dynamic {
+        background-color: #ededed;
+        width: 400px;
+        height: 400px;
+    }
+
+    .size,
+    .radius,
+    .shadow,
+    .color {
+        display: flex;
+        margin: 20px 20px;
+        gap: 10px;
+    }
+
+    .size input {
+        width: 315px;
+    }
+
+    .radius input {
+        width: 297px;
+    }
+
+    .shadow input {
+        width: 290px;
+    }
+
+    .color input {
+        width: 220px;
+    }
