@@ -1,49 +1,74 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
     * {
         margin: 0;
         padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Roboto',
+        sans-serif;
+        font-size: 15px;
     }
 
     .kotak-dynamic {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 120px 20%;
+        padding: 45px 10%;
     }
-
+    
     .kotak {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         border: 2px solid #000;
+        margin-top: 70px;
     }
-
+    
     .dynamic {
         background-color: #ededed;
-        width: 400px;
-        height: 400px;
+        border-radius: 20px;
+        width: 500px;
+        height: 460px;
+        box-shadow: 29px 29px 67px #B6BBC4;
     }
 
-    .size,
-    .radius,
-    .shadow,
-    .color {
+    .bg-color {
+        margin: 30px 45px;
         display: flex;
-        margin: 20px 20px;
         gap: 10px;
     }
 
-    .size input {
-        width: 315px;
+    .bg {
+        border: 2px solid #000;
+        width: 60px;
+        height: 20px;
+        background-color: #fff;
     }
 
-    .radius input {
-        width: 297px;
+    .radius,
+    .distance,
+    .color,
+    .intensity,
+    .blur {
+        margin: 20px 45px;
+        display: flex;
+        gap: 10px;
     }
 
-    .shadow input {
-        width: 290px;
+    input {
+        width: 200px;
     }
 
-    .color input {
-        width: 220px;
+    .teks p {
+        margin: 0 45px;
+    }
+
+    .code {
+        color: #3887BE;
+        background-color: #181823;
+        padding: 20px;
+        border-radius: 5px;
+        margin: 20px 45px;
+    }
+
+    .code p {
+        margin: 6px 10px;
     }
