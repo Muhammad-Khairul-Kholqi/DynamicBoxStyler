@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Styler</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .kotak-dynamic {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 120px 20%;
+    }
+
+    .kotak {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #000;
+    }
+
+    .dynamic {
+        background-color: #ededed;
+        width: 400px;
+        height: 400px;
+    }
+
+    .size, .radius, .shadow, .color {
+        display: flex;
+        margin: 20px 20px;
+        gap: 10px;
+    }
+
+    .size input {
+        width: 315px;
+    }
+
+    .radius input {
+        width: 297px;
+    }
+
+    .shadow input {
+        width: 290px;
+    }
+
+    .color input {
+        width: 220px;
+    }
+</style>
+<body>
+    <div class="kotak-dynamic">
+        <div class="hasil">
+            <div class="kotak"></div>
+        </div>
+
+        <div class="dynamic">
+            <div class="size">
+                <p>Size</p>
+                <input type="range">
+            </div>
+            <div class="radius">
+                <p>Radius</p>
+                <input type="range">
+            </div>
+            <div class="shadow">
+                <p>Shadow</p>
+                <input type="range">
+            </div>
+            <div class="color">
+                <p>Background Color</p>
+                <input type="range">
+            </div>
+            <div class="code">
+                <p>border-radius:</p>
+                <p>box-shadow:</p>
+                <p>background-color:</p>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
