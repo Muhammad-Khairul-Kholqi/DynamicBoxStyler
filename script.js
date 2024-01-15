@@ -7,6 +7,12 @@ const bColor = document.getElementById('color')
 const tColor = document.getElementById('tColor')
 const tKotakBg = document.querySelector('.bg p')
 
+// height & width
+const width = document.getElementById('width')
+const tWidth = document.getElementById('tWidth')
+const height = document.getElementById('height')
+const tHeight = document.getElementById('tHeight')
+
 const kotak = document.getElementById('kotak')
 
 // function border radius
@@ -28,3 +34,17 @@ bColor.addEventListener('input', function() {
     tKotakBg.textContent = '' + r + ', ' + g + ', 100';
 });
 
+// function width
+width.addEventListener('input', function () {
+    const panjang = width.value;
+    kotak.style.width = panjang + 'px';
+    tWidth.textContent = 'width: ' + panjang + 'px;';
+});
+
+
+// function height
+height.addEventListener('input', function () {
+    const panjang = height.value;
+    kotak.style.height = panjang + 'px';
+    tHeight.textContent = 'height: ' + panjang + 'px;';
+});
