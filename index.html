@@ -14,12 +14,27 @@
 
         <div class="dynamic">
             <div class="bg-color">
-                <p>Pick a color</p>
-                <div class="bg"></div>
+                <p>Pick a color: </p>
+                <div class="bg">
+                    <p>255, 255, 255</p>
+                </div>
             </div>
+            <hr class="hr1">
             <div class="radius">
                 <p>Radius: </p>
                 <input type="range" id="radius" min="0" max="50">
+            </div>
+            <div class="color">
+                <p>Color: </p>
+                <input type="range" id="color" min="0" max="255">
+            </div>
+            <div class="width">
+                <p>Width: </p>
+                <input type="range" id="width" min="0" max="300">
+            </div>
+            <div class="height">
+                <p>Height: </p>
+                <input type="range" id="height" min="0" max="300">
             </div>
             <div class="distance">
                 <p>Distance: </p>
@@ -33,17 +48,13 @@
                 <p>Blur: </p>
                 <input type="range">
             </div>
-            <div class="color">
-                <p>Background color: </p>
-                <input type="range">
-            </div>
-            <div class="teks">
-                <p>Code:</p>
-            </div>
+            <hr class="hr2">
             <div class="code">
-                <p id="bRadius">border-radius: ;</p>
-                <p>box-shadow:</p>
-                <p>background-color:</p>
+                <p id="bRadius">border-radius: 0%;</p>
+                <p id="tColor">background-color: rgb(255, 255, 255);</p>
+                <p >box-shadow: ;</p>
+                <p>width: 300px;</p>
+                <p>height: 300px;</p>
             </div>
         </div>
     </div>

@@ -12,14 +12,14 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 45px 10%;
+        padding: 30px 10%;
     }
     
     .kotak {
         width: 300px;
         height: 300px;
         border: 2px solid #000;
-        margin-top: 70px;
+        margin-top: 100px;
         border-radius: 0;
     }
     
@@ -27,7 +27,7 @@
         background-color: #ededed;
         border-radius: 20px;
         width: 500px;
-        height: 460px;
+        height: 440px;
         box-shadow: 29px 29px 67px #B6BBC4;
     }
 
@@ -39,24 +39,50 @@
 
     .bg {
         border: 2px solid #000;
-        width: 60px;
+        width: 100px;
         height: 20px;
         background-color: #fff;
+    }
+
+    .bg p {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 3px;
     }
 
     .radius,
     .distance,
     .color,
     .intensity,
-    .blur {
+    .blur,
+    .width,
+    .height {
         margin: 20px 45px;
         display: flex;
         gap: 10px;
     }
-
-    input {
-        width: 200px;
+    
+    .radius p,
+    .distance p,
+    .color p, 
+    .intensity  p,
+    .blur p,
+    .width p,
+    .height p {
+        font-size: 12px;
     }
+
+    .radius input,
+    .distance input,
+    .color input,
+    .intensity input,
+    .blur input,
+    .width input,
+    .height input {
+        width: 400px;
+    }
+
 
     .teks p {
         margin: 0 45px;
@@ -65,11 +91,24 @@
     .code {
         color: #3887BE;
         background-color: #181823;
-        padding: 20px;
+        padding: 10px;
         border-radius: 5px;
         margin: 20px 45px;
     }
 
     .code p {
         margin: 6px 10px;
+        font-size: 12px;
+    }
+
+    .hr1 {
+        width: 410px;
+        margin: 0 45px;
+        margin-top: -10px;
+    }
+
+    .hr2 {
+        width: 410px;
+        margin: 0 45px;
+        margin-bottom: 10px;
     }
