@@ -13,6 +13,10 @@ const tWidth = document.getElementById('tWidth')
 const height = document.getElementById('height')
 const tHeight = document.getElementById('tHeight')
 
+// box shadow
+const bShadow = document.getElementById('blur')
+const tShadow = document.getElementById('tShadow')
+
 const kotak = document.getElementById('kotak')
 
 // function border radius
@@ -47,4 +51,15 @@ height.addEventListener('input', function () {
     const panjang = height.value;
     kotak.style.height = panjang + 'px';
     tHeight.textContent = 'height: ' + panjang + 'px;';
+});
+
+
+// function box shadow
+bShadow.addEventListener('input', function() {
+     const d = bShadow.value + 'px';
+     const i = bShadow.value + 'px';
+     const b = bShadow.value + 'px';
+
+     kotak.style.boxShadow = `${d} ${i} ${b} #45474B`;
+     tShadow.textContent = 'box-shadow: ' + `${d} ${i} ${b} #45474B` + ';';
 });

@@ -19,7 +19,7 @@
         width: 300px;
         height: 300px;
         border: 2px solid #000;
-        margin-top: 100px;
+        margin-top: 90px;
         border-radius: 0;
     }
     
@@ -27,8 +27,9 @@
         background-color: #ededed;
         border-radius: 20px;
         width: 500px;
-        height: 440px;
-        box-shadow: 29px 29px 67px #B6BBC4;
+        height: 400px;
+        box-shadow: 29px 29px 60px #B6BBC4;
+        margin-top: 20px;
     }
 
     .bg-color {
@@ -70,7 +71,7 @@
     .blur p,
     .width p,
     .height p {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .radius input,
@@ -81,6 +82,7 @@
     .width input,
     .height input {
         width: 400px;
+        cursor: pointer;
     }
 
 
@@ -93,7 +95,7 @@
         background-color: #181823;
         padding: 10px;
         border-radius: 5px;
-        margin: 20px 45px;
+        margin: 60px 45px;
     }
 
     .code p {
