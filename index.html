@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="kotak-dynamic">
-        <div class="hasil">
+        <div class="hasil-kotak">
             <div class="kotak" id="kotak"></div>
         </div>
 
@@ -19,27 +19,32 @@
                     <p>255, 255, 255</p>
                 </div>
             </div>
-            <hr class="hr1">
-            <div class="radius">
-                <p>Radius: </p>
-                <input type="range" id="radius" min="0" max="50">
+
+            <hr>
+
+            <div class="input-range">
+                <div class="radius">
+                    <p>Radius: </p>
+                    <input type="range" id="radius" min="0" max="50">
+                </div>
+                <div class="color">
+                    <p>Color: </p>
+                    <input type="range" id="color" min="0" max="255">
+                </div>
+                <div class="width">
+                    <p>Width: </p>
+                    <input type="range" id="width" min="0" max="300">
+                </div>
+                <div class="height">
+                    <p>Height: </p>
+                    <input type="range" id="height" min="0" max="300">
+                </div>
+                <div class="blur">
+                    <p>Blur: </p>
+                    <input type="range" id="blur" min="0" max="100">
+                </div>
             </div>
-            <div class="color">
-                <p>Color: </p>
-                <input type="range" id="color" min="0" max="255">
-            </div>
-            <div class="width">
-                <p>Width: </p>
-                <input type="range" id="width" min="0" max="300">
-            </div>
-            <div class="height">
-                <p>Height: </p>
-                <input type="range" id="height" min="0" max="300">
-            </div>
-            <div class="blur">
-                <p>Blur: </p>
-                <input type="range" id="blur" min="0" max="100">
-            </div>
+
             <div class="code">
                 <p id="bRadius">border-radius: 0%;</p>
                 <p id="tColor">background-color: rgb(255, 255, 255);</p>
@@ -49,9 +54,6 @@
             </div>
         </div>
     </div>
-
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
